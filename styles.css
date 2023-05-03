@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    height: 70vh;
+    height: 79vh;
     width: 30vw;
     position: relative;
     margin: auto;
@@ -20,11 +20,16 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 28px;
+}
+
+.login_padding{
+    padding: 2px 0 16px 0;
 }
 
 .logintofacebook{
     font-size: 18px;
-    line-height: 60px;
+    line-height: 22px;
     text-align: center;
 }
 
@@ -56,6 +61,7 @@ main {
     color: #1d2129;
     padding: 0 8px;
     outline: none;
+    border-radius: 6px;
 }
 
  .form_container .login_button {
@@ -128,6 +134,7 @@ footer {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 footer ol {

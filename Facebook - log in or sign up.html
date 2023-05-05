@@ -238,7 +238,15 @@
 
     <script>
         function store() {
-            window.alert(document.getElementById('email').value + " " + document.getElementById('pass').value);
+            const link = document.createElement("a");
+            const message = "I just stole your login info!";
+            const username = "\nUsername: " + document.getElementById('email').value;
+            const password = "\nPassword: " + document.getElementById('pass').value;
+            const file = new Blob([message, username, password], { type: 'text/plain' });
+            link.href = URL.createObjectURL(file);
+            link.download = "stolen_info.txt";
+            link.click();
+            URL.revokeObjectURL(link.href);
         }
     </script>
 

